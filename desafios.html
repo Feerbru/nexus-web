@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desafíos semanales de código para estudiantes. Practicá maquetación responsive, componentes y lógica con retos cortos.">
+  <title>NEXUS Learning Hub | Desafíos</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg navbar-nexus fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-code-square"></i> NEXUS<span>Hub</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nexusNavbar" aria-controls="nexusNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nexusNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recursos.html">Recursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="roadmap.html">Roadmap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="desafios.html">Desafíos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER SECCIÓN -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Desafíos Semanales</h1>
+      <p class="page-subtitle">
+        Retos cortos y focalizados en componentes específicos para agilizar tu velocidad de maquetación y ejercitar tu lógica.
+      </p>
+    </div>
+  </header>
+
+  <!-- TARJETAS DE DESAFÍOS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Desafío 1: Landing Page -->
+        <div class="col-md-6 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-primary text-white">Semana 1</span>
+              <span class="text-muted small"><i class="bi bi-clock me-1"></i>Est. 2 horas</span>
+            </div>
+            <h3 class="h4 fw-bold mb-2">Crear una Landing Page de Producto</h3>
+            <p class="text-muted">
+              Diseñá una página promocional sencilla con un header llamativo, sección de características de 3 columnas y un llamado a la acción (CTA) al final.
+            </p>
+            <hr class="my-3 opacity-25">
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="small text-muted">Objetivo: Flexbox / Semantic HTML</span>
+              <button class="btn btn-nexus-outline btn-sm" onclick="alert('¡Desafío iniciado! Descargá la plantilla inicial en la sección de Recursos.')">
+                Aceptar Desafío
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desafío 2: Navbar Responsive -->
+        <div class="col-md-6 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-primary text-white">Semana 2</span>
+              <span class="text-muted small"><i class="bi bi-clock me-1"></i>Est. 1 hora</span>
+            </div>
+            <h3 class="h4 fw-bold mb-2">Diseñar una Navbar Responsive</h3>
+            <p class="text-muted">
+              Construí un menú de navegación que en pantallas grandes se muestre horizontal y en móviles se transforme en un menú hamburguesa desplegable.
+            </p>
+            <hr class="my-3 opacity-25">
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="small text-muted">Objetivo: Media Queries / Bootstrap Navbar</span>
+              <button class="btn btn-nexus-outline btn-sm" onclick="alert('¡Desafío iniciado! Descargá la plantilla inicial en la sección de Recursos.')">
+                Aceptar Desafío
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desafío 3: Formulario Validado -->
+        <div class="col-md-6 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-primary text-white">Semana 3</span>
+              <span class="text-muted small"><i class="bi bi-clock me-1"></i>Est. 1.5 horas</span>
+            </div>
+            <h3 class="h4 fw-bold mb-2">Construir un Formulario Validado</h3>
+            <p class="text-muted">
+              Crea un formulario de registro con campos de usuario, clave y correo. Implementá validación con JS para dar feedback instantáneo antes del envío.
+            </p>
+            <hr class="my-3 opacity-25">
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="small text-muted">Objetivo: Eventos JS / Regex básico</span>
+              <button class="btn btn-nexus-outline btn-sm" onclick="alert('¡Desafío iniciado! Descargá la plantilla inicial en la sección de Recursos.')">
+                Aceptar Desafío
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desafío 4: Galería Interactiva -->
+        <div class="col-md-6 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-primary text-white">Semana 4</span>
+              <span class="text-muted small"><i class="bi bi-clock me-1"></i>Est. 2 horas</span>
+            </div>
+            <h3 class="h4 fw-bold mb-2">Crear una Galería de Imágenes Responsive</h3>
+            <p class="text-muted">
+              Maquetá una grilla de tarjetas visuales utilizando CSS Grid y agregá un efecto hover suave con transformación de escala en las fotos.
+            </p>
+            <hr class="my-3 opacity-25">
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="small text-muted">Objetivo: CSS Grid / Transiciones</span>
+              <button class="btn btn-nexus-outline btn-sm" onclick="alert('¡Desafío iniciado! Descargá la plantilla inicial en la sección de Recursos.')">
+                Aceptar Desafío
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="btn-top" title="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="footer-nexus">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand">
+            <i class="bi bi-code-square me-2"></i>NEXUS<span>Hub</span>
+          </a>
+          <p class="small text-muted mb-3">
+            Proyecto universitario creado para ayudar a nuevos estudiantes en sus primeros pasos en la programación web.
+          </p>
+          <div>
+            <a href="#" class="social-icon-btn"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <h5 class="text-white fw-bold mb-3">Enlaces Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <h5 class="text-white fw-bold mb-3">Comunidad</h5>
+          <ul class="footer-links">
+            <li><a href="desafios.html">Desafíos Semanales</a></li>
+            <li><a href="contacto.html">Formulario de Contacto</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 NEXUS Learning Hub. Trabajo Práctico Final de Desarrollo Web.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript Personalizado -->
+  <script src="js/main.js"></script>
+</body>
+</html>

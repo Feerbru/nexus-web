@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos esenciales de HTML5, CSS3, JavaScript, Bootstrap y Git para estudiantes de desarrollo web.">
+  <title>NEXUS Learning Hub | Recursos</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg navbar-nexus fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-code-square"></i> NEXUS<span>Hub</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nexusNavbar" aria-controls="nexusNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nexusNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="recursos.html">Recursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="roadmap.html">Roadmap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="desafios.html">Desafíos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER SECCIÓN -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Recursos Tecnológicos</h1>
+      <p class="page-subtitle">
+        Guías fundamentales sobre las tecnologías esenciales que todo desarrollador web debe dominar para maquetar y programar sitios interactivos.
+      </p>
+    </div>
+  </header>
+
+  <!-- TARJETAS DE RECURSOS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- HTML5 Card -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="card-icon-wrapper">
+              <i class="bi bi-filetype-html"></i>
+            </div>
+            <h3 class="h4 fw-bold mb-3">HTML5</h3>
+            <p class="text-muted flex-grow-1">
+              El lenguaje de marcado estándar para estructurar el contenido web mediante etiquetas semánticas y accesibles.
+            </p>
+            <button class="btn btn-nexus-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#modalHtml">
+              Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- CSS3 Card -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="card-icon-wrapper">
+              <i class="bi bi-filetype-css"></i>
+            </div>
+            <h3 class="h4 fw-bold mb-3">CSS3</h3>
+            <p class="text-muted flex-grow-1">
+              Hojas de estilo en cascada para dar diseño, color, animación y adaptar sitios a cualquier pantalla con Flexbox y Grid.
+            </p>
+            <button class="btn btn-nexus-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#modalCss">
+              Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- JavaScript Card -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="card-icon-wrapper">
+              <i class="bi bi-filetype-js"></i>
+            </div>
+            <h3 class="h4 fw-bold mb-3">JavaScript ES6</h3>
+            <p class="text-muted flex-grow-1">
+              El lenguaje de programación que otorga interactividad, dinámica y manejo de datos en tiempo real en la web.
+            </p>
+            <button class="btn btn-nexus-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#modalJs">
+              Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- Bootstrap Card -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="card-icon-wrapper">
+              <i class="bi bi-bootstrap"></i>
+            </div>
+            <h3 class="h4 fw-bold mb-3">Bootstrap 5</h3>
+            <p class="text-muted flex-grow-1">
+              El framework CSS más popular para construir interfaces responsive rápidamente utilizando su potente sistema de grillas.
+            </p>
+            <button class="btn btn-nexus-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#modalBootstrap">
+              Ver más
+            </button>
+          </div>
+        </div>
+
+        <!-- Git Card -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="custom-card">
+            <div class="card-icon-wrapper">
+              <i class="bi bi-git"></i>
+            </div>
+            <h3 class="h4 fw-bold mb-3">Git & GitHub</h3>
+            <p class="text-muted flex-grow-1">
+              Sistema de control de versiones esencial para gestionar el historial de código y colaborar en equipo en proyectos web.
+            </p>
+            <button class="btn btn-nexus-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#modalGit">
+              Ver más
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALES DE DETALLE DE RECURSOS -->
+  
+  <!-- Modal HTML -->
+  <div class="modal fade" id="modalHtml" tabindex="-1" aria-labelledby="modalHtmlLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modalHtmlLabel"><i class="bi bi-filetype-html text-primary me-2"></i>Aprender HTML5</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>HTML5 es la columna vertebral de cualquier sitio web. Aprenderás a utilizar etiquetas semánticas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;footer&gt;</code> para crear estructuras accesibles para usuarios y motores de búsqueda.</p>
+          <h6>Conceptos clave:</h6>
+          <ul>
+            <li>Estructura de documentos y Doctype</li>
+            <li>Formularios e inputs interactivos</li>
+            <li>Elementos multimedia (&lt;img&gt;, &lt;video&gt;, &lt;audio&gt;)</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal CSS -->
+  <div class="modal fade" id="modalCss" tabindex="-1" aria-labelledby="modalCssLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modalCssLabel"><i class="bi bi-filetype-css text-primary me-2"></i>Aprender CSS3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Con CSS3 darás vida y estilo a la estructura HTML. Te enseñaremos a manejar la cascada, la especificidad y el modelo de caja, además de dominar diagramaciones avanzadas.</p>
+          <h6>Conceptos clave:</h6>
+          <ul>
+            <li>Flexbox para alineación unidimensional</li>
+            <li>CSS Grid para layouts bidimensionales</li>
+            <li>Media Queries para adaptabilidad responsive</li>
+            <li>Variables CSS y animaciones fluidas</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal JS -->
+  <div class="modal fade" id="modalJs" tabindex="-1" aria-labelledby="modalJsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modalJsLabel"><i class="bi bi-filetype-js text-primary me-2"></i>Aprender JavaScript</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>JavaScript permite reaccionar a eventos del usuario, manipular el DOM (Document Object Model) y conectarse a servicios externos.</p>
+          <h6>Conceptos clave:</h6>
+          <ul>
+            <li>Variables (const, let) y Funciones Flecha</li>
+            <li>Manipulación del DOM y Event Listeners</li>
+            <li>Validación de formularios</li>
+            <li>Asincronía básica (Fetch API, Promises)</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Bootstrap -->
+  <div class="modal fade" id="modalBootstrap" tabindex="-1" aria-labelledby="modalBootstrapLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modalBootstrapLabel"><i class="bi bi-bootstrap text-primary me-2"></i>Aprender Bootstrap 5</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Bootstrap acelera el desarrollo web mediante componentes preconfigurados como navbars, modales, alertas y tarjetas listas para usar.</p>
+          <h6>Conceptos clave:</h6>
+          <ul>
+            <li>Sistema de grillas flex (containers, rows, cols)</li>
+            <li>Clases de utilidad para márgenes y paddings</li>
+            <li>Componentes interactivos con JavaScript liviano</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Git -->
+  <div class="modal fade" id="modalGit" tabindex="-1" aria-labelledby="modalGitLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modalGitLabel"><i class="bi bi-git text-primary me-2"></i>Aprender Git & GitHub</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Git te permite guardar commits de tu progreso y subir tus repositorios a GitHub para mostrar tu portfolio al mundo.</p>
+          <h6>Comandos esenciales:</h6>
+          <ul>
+            <li><code>git init</code> / <code>git clone</code></li>
+            <li><code>git add .</code> & <code>git commit -m "mensaje"</code></li>
+            <li><code>git push origin main</code></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="btn-top" title="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- FOOTER  -->
+  <footer class="footer-nexus">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <a href="index.html" class="footer-brand">
+            <i class="bi bi-code-square me-2"></i>NEXUS<span>Hub</span>
+          </a>
+          <p class="small text-muted mb-3">
+            Proyecto universitario creado para ayudar a nuevos estudiantes en sus primeros pasos en la programación web.
+          </p>
+          <div>
+            <a href="#" class="social-icon-btn"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <h5 class="text-white fw-bold mb-3">Enlaces Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <h5 class="text-white fw-bold mb-3">Comunidad</h5>
+          <ul class="footer-links">
+            <li><a href="desafios.html">Desafíos Semanales</a></li>
+            <li><a href="contacto.html">Formulario de Contacto</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 NEXUS Learning Hub. Trabajo Práctico Final de Desarrollo Web.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript Personalizado -->
+  <script src="js/main.js"></script>
+</body>
+</html>

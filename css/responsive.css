@@ -1,0 +1,154 @@
+/* --- Dispositivos Móviles (max-width: 767.98px) --- */
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .hero-section {
+    padding: 7rem 0 4rem 0;
+    text-align: center;
+  }
+
+  .page-header {
+    padding: 6.5rem 1rem 3rem 1rem;
+    text-align: center;
+  }
+
+  .page-header h1,
+  .page-header .page-title {
+    font-size: 2rem;
+  }
+
+  .page-header p,
+  .page-header .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .roadmap-step {
+    gap: 1rem;
+  }
+
+  .roadmap-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .roadmap-step:not(:last-child)::after {
+    left: 20px;
+  }
+
+  .roadmap-content {
+    padding: 1.25rem;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .custom-card {
+    padding: 1.5rem;
+  }
+
+  .featured-card {
+    padding: 1.75rem;
+  }
+
+  .roadmap-item {
+    gap: 1rem;
+  }
+
+  .roadmap-icon-node {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .roadmap-item:not(:last-child)::after {
+    left: 20px;
+    top: 45px;
+  }
+
+  #btn-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Ajustes en móviles */
+  .antigravity-scene {
+    padding: 1.25rem 0.25rem;
+    max-width: 100%;
+  }
+
+  .floating-chip-1 {
+    top: -12px;
+    right: -4px;
+  }
+
+  .floating-chip-2 {
+    bottom: 15px;
+    right: -10px;
+  }
+
+  .floating-chip-3 {
+    display: none;
+  }
+
+  .floating-chip-4 {
+    top: 45%;
+    left: -12px;
+  }
+
+  .chip-content {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .ide-body {
+    font-size: 0.75rem;
+    padding: 1rem 0.8rem;
+  }
+
+  .ide-line-numbers {
+    padding-right: 0.75rem;
+  }
+
+  .ide-code {
+    padding-left: 0.75rem;
+  }
+}
+
+/* --- Menú Desplegable Mobile --- */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    padding: 1.2rem;
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--shadow-dark);
+    margin-top: 0.75rem;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+  }
+}
