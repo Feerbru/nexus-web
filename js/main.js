@@ -173,6 +173,7 @@ function initFiltroProyectos() {
  * - Resplandor de luz dinámico (radial spotlight glare).
  * - Parallax multi-capa en elementos flotantes orbitales con data-depth.
  * - Interpolación lineal (lerp) a 60/120fps y retorno elástico al reposo.
+ * - Inclinación táctil breve en dispositivos sin mouse.
  */
 function initAntigravityMotion() {
   const containers = document.querySelectorAll('[data-antigravity="true"]');
@@ -181,9 +182,8 @@ function initAntigravityMotion() {
   // Respetar preferencia de accesibilidad contra mareos o animaciones
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  // Solo aplicar tracking interactivo si el dispositivo cuenta con puntero/mouse
-  const hasPointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-  if (!hasPointer) return;
+  const hasMouse = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const hasTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
   containers.forEach(container => {
     const card = container.querySelector('.antigravity-card') || container;
@@ -196,6 +196,7 @@ function initAntigravityMotion() {
     let rect = null;
     let isHovering = false;
     let rafId = null;
+    let touchResetTimeout = null;
 
     // Valores interpolados (actuales) y objetivo
     let curRotX = 0;
@@ -251,12 +252,27 @@ function initAntigravityMotion() {
     }
 
     function onMouseLeave() {
+      clearTimeout(touchResetTimeout);
       isHovering = false;
       targetRotX = 0;
       targetRotY = 0;
       targetDriftX = 0;
       targetDriftY = 0;
       container.classList.remove('antigravity-active');
+    }
+
+    function onTouchStart(e) {
+      clearTimeout(touchResetTimeout);
+      isHovering = true;
+      updateRect();
+      container.classList.add('antigravity-active');
+      cancelAnimationFrame(rafId);
+      onMouseMove(e);
+      rafId = requestAnimationFrame(animate);
+    }
+
+    function onTouchEnd() {
+      touchResetTimeout = setTimeout(onMouseLeave, 500);
     }
 
     function animate() {
@@ -305,11 +321,22 @@ function initAntigravityMotion() {
       rafId = requestAnimationFrame(animate);
     }
 
-    container.addEventListener('mouseenter', onMouseEnter);
-    container.addEventListener('mousemove', onMouseMove);
-    container.addEventListener('mouseleave', onMouseLeave);
+    if (hasMouse) {
+      container.addEventListener('mouseenter', onMouseEnter);
+      container.addEventListener('mousemove', onMouseMove);
+      container.addEventListener('mouseleave', onMouseLeave);
+    }
+
+    if (hasTouch) {
+      container.addEventListener('pointerdown', onTouchStart);
+      container.addEventListener('pointermove', e => {
+        if (isHovering && e.pointerType === 'touch') onMouseMove(e);
+      });
+      container.addEventListener('pointerup', onTouchEnd);
+      container.addEventListener('pointercancel', onMouseLeave);
+    }
+
     window.addEventListener('resize', updateRect, { passive: true });
     window.addEventListener('scroll', updateRect, { passive: true });
   });
 }
-
